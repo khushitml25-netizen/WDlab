@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scholarship / Seminar Registration Form</title>
+</head>
+<body>
+
+<h2>Scholarship / Seminar Registration Form</h2>
+
+<form>
+
+    <!-- Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>Full Name:</label>
+        <input type="text" name="fullname" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+    </fieldset>
+
+    <br>
+
+    <!-- Academic Information -->
+    <fieldset>
+        <legend>Academic Details</legend>
+
+        <label>College Name:</label>
+        <input type="text" name="college"><br><br>
+
+        <label>Course:</label>
+        <input type="text" name="course"><br><br>
+
+        <label>Year of Study:</label>
+        <select name="year">
+            <option value="">Select Year</option>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+            <option value="4">Fourth Year</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <!-- Seminar / Scholarship Selection -->
+    <fieldset>
+        <legend>Program Selection</legend>
+
+        <label>Select Program Type:</label><br>
+        <input type="radio" name="program" value="Scholarship"> Scholarship
+        <input type="radio" name="program" value="Seminar"> Seminar
+        <br><br>
+
+        <label>Areas of Interest:</label><br>
+        <input type="checkbox" name="interest" value="Technology"> Technology<br>
+        <input type="checkbox" name="interest" value="Business"> Business<br>
+        <input type="checkbox" name="interest" value="Research"> Research<br>
+        <input type="checkbox" name="interest" value="Entrepreneurship"> Entrepreneurship
+    </fieldset>
+
+    <br>
+
+    <!-- Submit -->
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear Form">
+
+</form>
+
+</body>
+</html>
