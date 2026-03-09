@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .header-cell {
+            background-color: #f1f1f1;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Timetable</h1>
+
+    <!-- Table to Display Timetable -->
+    <table>
+        <caption>Weekly Timetable</caption>
+
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th rowspan="2">Time</th>
+                <th colspan="5">Days</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td class="header-cell">8:00 AM - 9:00 AM</td>
+                <td>Math</td>
+                <td>History</td>
+                <td>Physics</td>
+                <td>Biology</td>
+                <td>Chemistry</td>
+            </tr>
+            <tr>
+                <td class="header-cell">9:00 AM - 10:00 AM</td>
+                <td>English</td>
+                <td>Math</td>
+                <td>Art</td>
+                <td>Computer Science</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <td class="header-cell">10:00 AM - 11:00 AM</td>
+                <td>Biology</td>
+                <td>Chemistry</td>
+                <td>Math</td>
+                <td>History</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <td class="header-cell">11:00 AM - 12:00 PM</td>
+                <td>Geography</td>
+                <td>English</td>
+                <td>History</td>
+                <td>Math</td>
+                <td>Computer Science</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="6">Note: Timetable is subject to change</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Student Record Table (can be added similarly) -->
+    <table>
+        <caption>Student Record</caption>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>John Doe</td>
+                <td>Computer Science</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Jane Smith</td>
+                <td>Mathematics</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Emma Brown</td>
+                <td>Physics</td>
+                <td>A-</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Michael Johnson</td>
+                <td>Biology</td>
+                <td>B</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
