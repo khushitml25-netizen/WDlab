@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SneakerX Advanced Store</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f6f9;
+}
+
+/* HEADER */
+header {
+    background: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HERO */
+.hero {
+    background: url('https://i.pinimg.com/736x/7f/67/bb/7f67bb72b3014ab5f0bdd5be093a5f06.jpg') center/cover;
+    padding: 80px;
+    color: white;
+    text-align: center;
+}
+
+/* FILTER */
+.filter {
+    padding: 20px;
+    text-align: center;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.2);
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.price {
+    color: green;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 8px;
+    background: black;
+    color: white;
+    border: none;
+}
+
+button:active {
+    background: green;
+}
+
+/* VIDEO */
+.video-section {
+    background: white;
+    padding: 40px;
+    text-align: center;
+}
+
+/* FORM */
+form {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>SneakerX</h2>
+    <nav>
+        <a href="#" style="color:white;">Home</a>
+        <a href="#" style="color:white;">Shop</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Explore Latest Sneakers</h1>
+</section>
+
+
+<!-- FILTER -->
+<section class="filter">
+    <input type="search" placeholder="Search sneakers...">
+    <label>Price Range:</label>
+    <input type="range" min="1000" max="6000">
+</section>
+
+<!-- PRODUCTS -->
+<section class="grid">
+
+<article class="card">
+<img src="https://i.pinimg.com/736x/a9/21/25/a9212535e82c65dc4a41280816dd4fff.jpg">
+<div class="card-content">
+<h4>Air Max</h4>
+<p class="price">₹4999</p>
+<meter value="4" min="0" max="5"></meter>
+<progress value="80" max="100"></progress>
+<button>Add to Cart</button>
+<details><summary>More</summary><p>Comfortable running sneaker</p></details>
+</div>
+</article>
+
+<article class="card">
+<img src="https://i.pinimg.com/1200x/65/d1/d5/65d1d5552ec4adb95bc979448fbf9d4c.jpg">
+<div class="card-content">
+<h4>Runner Pro</h4>
+<p class="price">₹3999</p>
+<meter value="3" min="0" max="5"></meter>
+<progress value="60" max="100"></progress>
+<button>Add to Cart</button>
+<details><summary>More</summary><p>Lightweight design</p></details>
+</div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+<div class="card-content">
+<h4>Street Style</h4>
+<p class="price">₹2999</p>
+<meter value="5" min="0" max="5"></meter>
+<progress value="90" max="100"></progress>
+<button>Add to Cart</button>
+<details><summary>More</summary><p>Casual wear</p></details>
+</div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f">
+<div class="card-content">
+<h4>Classic White</h4>
+<p class="price">₹3499</p>
+<meter value="4" min="0" max="5"></meter>
+<progress value="70" max="100"></progress>
+<button>Add to Cart</button>
+<details><summary>More</summary><p>Classic design</p></details>
+</div>
+</article>
+
+<article class="card">
+<img src="https://i.pinimg.com/736x/1e/46/55/1e4655a0d382285cb3149dbbbc70a296.jpg">
+<div class="card-content">
+<h4>Sport Elite</h4>
+<p class="price">₹5999</p>
+<meter value="5" min="0" max="5"></meter>
+<progress value="95" max="100"></progress>
+<button>Add to Cart</button>
+<details><summary>More</summary><p>Premium sports shoes</p></details>
+</div>
+</article>
+
+<article class="card">
+<img src="https://i.pinimg.com/736x/10/d8/e7/10d8e7b18ffa854a53afadd28b070c05.jpg">
+<div class="card-content">
+<h4>Urban Sneaker</h4>
+<p class="price">₹3799</p>
+<meter value="3" min="0" max="5"></meter>
+<progress value="65" max="100"></progress>
+<button>Add to Cart</button>
+<details><summary>More</summary><p>Trendy look</p></details>
+</div>
+</article>
+
+</section>
+
+<!-- REVIEW FORM -->
+<form>
+<h2>Customer Review</h2>
+<input type="text" placeholder="Name" required><br><br>
+<input type="email" placeholder="Email" required><br><br>
+<textarea placeholder="Review" required></textarea><br><br>
+<button type="submit">Submit</button>
+</form>
+
+<footer>
+<p>© 2026 SneakerX</p>
+</footer>
+
+</body>
+</html>
